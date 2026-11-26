@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Organiza contraseñas y accesos en tu bóveda privada para Android.">
+  <meta name="theme-color" content="#090c11">
+  <title>Privy — Tu privacidad. Tu control.</title>
+  <link rel="icon" href="assets/privy.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="download.js" defer></script>
+</head>
+<body>
+  <header class="top shell">
+    <a class="brand" href="#inicio"><img src="assets/privy.webp" width="38" height="38" alt="">Privy</a>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a><a href="#funciones">Funciones</a><a href="#seguridad">Seguridad</a>
+    </nav>
+    <a class="button compact download" href="#descargar"><span aria-hidden="true">↓</span> APK para Android</a>
+  </header>
+  <main id="inicio">
+    <section class="hero shell" aria-labelledby="titulo">
+      <div class="hero-copy">
+        <span class="kicker"><i></i> Bóveda privada para Android</span>
+        <h1 id="titulo">Tus contraseñas.<br>Tus accesos.<br><em>Bajo tu control.</em></h1>
+        <p>Organiza tus contraseñas, cuentas de trabajo y notas privadas en una bóveda que puedes proteger con tu contraseña maestra.</p>
+        <div class="actions">
+          <a class="button download" href="#descargar"><span aria-hidden="true">↓</span> Descargar APK</a>
+          <a class="button outline" href="#funciones">Ver funciones</a>
+        </div>
+      </div>
+      <div class="hero-art"><img src="assets/boveda.webp" width="1080" height="810" alt="Vista ilustrativa de Privy en dos teléfonos, con carpetas y contraseñas" fetchpriority="high"></div>
+    </section>
+    <section class="features shell" id="funciones" aria-labelledby="funciones-titulo">
+      <div class="section-title">
+        <h2 id="funciones-titulo">Todo en su lugar.<br>Todo bajo llave.</h2>
+        <p>Desde tus cuentas de todos los días hasta los accesos que solo usas de vez en cuando.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="card"><span class="glyph" aria-hidden="true">◎</span><h3>Acceso con biometría</h3><p>Activa el desbloqueo biométrico de la bóveda en un dispositivo compatible.</p></article>
+        <article class="card"><span class="glyph folder" aria-hidden="true"></span><h3>Carpetas protegidas</h3><p>Organiza tus accesos y asigna una contraseña independiente a las carpetas que elijas.</p></article>
+        <article class="card"><span class="glyph lock" aria-hidden="true"></span><h3>Cifrado en tu dispositivo</h3><p>Privy cifra el contenido de la bóveda antes de sincronizarlo.</p></article>
+        <article class="card"><span class="glyph" aria-hidden="true">⟳</span><h3>Sincronización segura</h3><p>Accede a tu bóveda con tu cuenta y tu contraseña maestra en otro dispositivo.</p></article>
+      </div>
+    </section>
+    <section class="examples shell" aria-labelledby="ejemplos-titulo">
+      <div class="section-title"><h2 id="ejemplos-titulo">Cómo se usa Privy</h2><p>Tres ejemplos para empezar a organizar tu bóveda.</p></div>
+      <div class="examples-grid">
+        <article class="card example"><span class="portrait first" aria-hidden="true"></span><div><h3>Trabajo</h3><p>Guarda accesos a sistemas, API y cuentas de trabajo en una carpeta protegida.</p></div></article>
+        <article class="card example"><span class="portrait second" aria-hidden="true"></span><div><h3>Vida personal</h3><p>Ten juntos los accesos al correo, redes sociales y servicios de uso diario.</p></div></article>
+        <article class="card example"><span class="portrait third" aria-hidden="true"></span><div><h3>Proyectos</h3><p>Separa tus cuentas personales de las herramientas que usas para cada proyecto.</p></div></article>
+      </div>
+      <ul class="trust" id="seguridad" aria-label="Protecciones de Privy">
+        <li><strong>AES-256-GCM</strong><span>Cifrado autenticado</span></li>
+        <li><strong>Argon2id</strong><span>Derivación de claves</span></li>
+        <li><strong>Bloqueo automático</strong><span>Tras dos minutos de inactividad</span></li>
+      </ul>
+    </section>
+    <section class="download-panel shell" id="descargar" aria-labelledby="descarga-titulo">
+      <div class="download-brand"><img src="assets/privy.webp" width="88" height="88" alt=""><div><strong>Privy</strong><p>Tu privacidad. Tu control.</p></div></div>
+      <div class="download-copy">
+        <h2 id="descarga-titulo">Descarga Privy para Android</h2>
+        <p>Requiere Android 6 o posterior y conexión a internet para sincronizar.</p>
+        <a class="button" id="apk" href="privy-release.apk" download hidden><span aria-hidden="true">↓</span> Descargar APK</a>
+        <p id="apk-status" role="status">El APK aún no está disponible.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="shell"><a class="brand" href="#inicio">Privy</a><a href="#seguridad">Seguridad</a></footer>
+</body>
+</html>

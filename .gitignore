@@ -1,0 +1,8 @@
+.dart_tool/
+build/
+config.json
+.flutter-plugins-dependencies
+android/local.properties
+.local-sdk/
+.android/
+landing/privy-release.apk
