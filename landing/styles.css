@@ -88,7 +88,6 @@ h2 { font-size: clamp(1.8rem, 4vw, 3.15rem); line-height: 1.09; letter-spacing: 
 .download-copy { border-left: 1px solid var(--line); padding-left: 28px; }
 .download-copy h2 { font-size: clamp(1.45rem, 3vw, 2rem); }
 .download-copy p { margin: 7px 0 13px; }
-.download-copy #apk-status { margin-bottom: 0; color: #c2daf7; }
 footer { display: flex; justify-content: space-between; align-items: center; padding-block: 30px; color: var(--muted); }
 @media (max-width: 850px) {
   .hero { min-height: auto; }
@@ -117,3 +116,32 @@ footer { display: flex; justify-content: space-between; align-items: center; pad
   .trust li + li { border-left: 0; border-top: 1px solid var(--line); }
 }
 @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
+
+/* Navigation, motion and interaction */
+.top { position: sticky; top: 12px; z-index: 5; background: #101721ed; backdrop-filter: blur(18px); }
+section[id], #seguridad, #inicio { scroll-margin-top: 105px; }
+.button, nav a, .card, .brand { transition: color .2s, background-color .2s, border-color .2s, box-shadow .2s; }
+.button:focus-visible, .button:hover { box-shadow: 0 0 0 4px #56baff25; }
+.card:hover { border-color: #477398; box-shadow: 0 12px 28px #0005; }
+.motion [data-reveal] { opacity: 0; translate: 0 20px; transition: opacity .52s ease, translate .52s ease, border-color .2s, box-shadow .2s; }
+.motion [data-reveal].in-view, .motion [data-reveal]:focus-within { opacity: 1; translate: 0 0; }
+.motion .card:nth-child(2) { transition-delay: 55ms, 55ms, 0ms, 0ms; }
+.motion .card:nth-child(3) { transition-delay: 110ms, 110ms, 0ms, 0ms; }
+.motion .card:nth-child(4) { transition-delay: 165ms, 165ms, 0ms, 0ms; }
+.trust .stat { display: inline; color: inherit; font-size: inherit; font-variant-numeric: tabular-nums; }
+[data-count] { font-variant-numeric: tabular-nums; min-width: 1ch; }
+.community { text-align: center; margin-top: 18px; }
+.community strong { color: var(--blue); font-size: 1.35rem; font-variant-numeric: tabular-nums; }
+.footer { display: block; margin-top: 52px; padding-block: 26px; background: #0e151f; border-top: 1px solid var(--line); }
+.footer-content { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.footer-content p { margin-top: 6px; }
+@media (max-width: 650px) {
+  .top { top: 8px; }
+  .footer-content { flex-wrap: wrap; }
+  .footer-content nav { flex-wrap: wrap; }
+  .footer-content nav a { padding: 7px 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion [data-reveal] { opacity: 1; translate: none; }
+  *, *::before, *::after { transition: none !important; }
+}

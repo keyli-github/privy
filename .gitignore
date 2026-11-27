@@ -5,4 +5,3 @@ config.json
 android/local.properties
 .local-sdk/
 .android/
-landing/privy-release.apk
